@@ -1,0 +1,9 @@
+@import url('../../vendor/normalize.scss');
+@import url('../../vendor/fonts/fonts.scss');
+@import url('../block/page/page.scss');
+
+.page {
+  font-family: 'Proxima Nova Condensed', Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
