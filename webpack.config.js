@@ -30,13 +30,35 @@ module.exports = {
         type: 'asset/resource'
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          {
+            loader: 'style-resources-loader',
+            options: {
+              patterns: [
+                path.resolve(__dirname, 'src/styles/_variables.scss'),
+              ],
+            },
+          },
+        ],
+      },
+      // {
+      //   test: /\.(scss|css)$/,
+      //   use: [
+      //     MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     'sass-loader',
+      //     'style-loader'
+      //   ]
+      // },
     ]
   },
   plugins: [

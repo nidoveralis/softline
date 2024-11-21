@@ -30,26 +30,27 @@
     </header>
     <main class="main">
       <section class="lead">
-        <h1>Softline </h1>
-        <p>Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное
+        <h1 class="lead__title active">Softline</h1>
+        <p class="lead__info">Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное
           и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр
           IT-услуг.</p>
       </section>
       <section class="map">
         <div class="map__header">
-          <button>Офисы Softline</button>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <button class="map__button">Офисы Softline</button>
+          <ul class="map__list">
+            <li class="map__item_active active">Все</li>
+            <li class="map__item">Москва</li>
+            <li class="map__item">Центр</li>
+            <li class="map__item">Северо-Запад</li>
+            <li class="map__item">Юг</li>
+            <li class="map__item">Волга</li>
+            <li class="map__item">Урал</li>
+            <li class="map__item">Сибирь</li>
+            <li class="map__item">Дальний восток</li>
           </ul>
         </div>
+        <img src="<%=require('./assets/images/map.png')%>" class="map__img" alt="Карта">
       </section>
       <section class="mission">
         <h2>Миссия Softline</h2>

@@ -1,9 +1,49 @@
+@use '_variables' as vars;
+
 @import url('../../vendor/normalize.scss');
 @import url('../../vendor/fonts/fonts.scss');
 @import url('../block/page/page.scss');
+@import url('../block/header/header.scss');
+@import url('../block/lead/lead.scss');
+@import url('../block/map//map.scss');
 
-.page {
+body {
+  color: #444;
   font-family: 'Proxima Nova Condensed', Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  color: vars.$active-color;
+}
+
+.main-color {
+  background-color: vars.$active-color;
 }
