@@ -1,0 +1,89 @@
+.benefits {
+  width: 89%;
+  box-shadow: 0px 0px 40px 0px #0000000F;
+  margin: 0 auto 96px;
+  height: 73.5vh;
+}
+
+.benefits__elem {
+  height: 49%;
+  width: 94%;
+}
+
+.benefits__container {
+  padding: 67px 0;
+}
+
+.benefits__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 178px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  gap: 10px;
+}
+
+.benefits__icon {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits__icon_med {
+  background-image: url('../../assets/icons/med.svg');
+}
+
+.benefits__icon_cake {
+  background-image: url('../../assets/icons/cake.svg');
+}
+
+.benefits__icon_desk {
+  background-image: url('../../assets/icons/desk.svg');
+}
+
+.benefits__icon_sport {
+  background-image: url('../../assets/icons/sport.svg');
+}
+
+.benefits__icon_hand {
+  background-image: url('../../assets/icons/hand.svg');
+}
+
+.benefits__icon_print {
+  background-image: url('../../assets/icons/print.svg');
+}
+
+.benefits__icon_house {
+  background-image: url('../../assets/icons/house.svg');
+}
+
+.benefits__elem:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .benefits__container {
+    padding: 77px 0;
+  }
+
+  .benefits__list {
+    margin-top: 45px;
+  }
+}

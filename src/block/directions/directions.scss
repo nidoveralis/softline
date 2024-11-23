@@ -1,0 +1,103 @@
+.directions {
+  margin-bottom: 99px;
+}
+
+.directions__list {
+  margin-top: 53px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 22px 19px;
+  margin-right: 8px;
+}
+
+.directions__item {
+  width: 615px;
+  height: 260px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.directions__item_solution {
+  background-image: url('../../assets/images/solution.jpg');
+}
+
+.directions__item_security {
+  background-image: url('../../assets/images/security.jpg');
+}
+
+.directions__item_import {
+  background-image: url('../../assets/images/import.jpg');
+}
+
+.directions__item_cloud {
+  background-image: url('../../assets/images/cloud.jpg');
+}
+
+.directions__item_develop {
+  background-image: url('../../assets/images/develop.jpg');
+}
+
+.directions__item_support {
+  background-image: url('../../assets/images/support.jpg');
+}
+
+.directions__background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #2D3653;
+  opacity: .6;
+  color: #fff;
+  bottom: 0;
+  height: 82px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.directions__container {
+  padding: 29px 20px;
+  width: 77%;
+}
+
+.directions__container_higth {
+  padding-top: 18px;
+}
+
+.directions__info {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: -0.015em;
+  line-height: 24px;
+}
+
+.directions__text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.directions__item:hover .directions__background {
+  height: 100%;
+}
+
+.directions__item:hover .directions__text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.directions__item:hover .directions__container_higth {
+  padding-top: 26px;
+}

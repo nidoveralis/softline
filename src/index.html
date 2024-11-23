@@ -31,7 +31,8 @@
     <main class="main">
       <section class="lead">
         <h1 class="lead__title active">Softline</h1>
-        <p class="lead__info">Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака, программное
+        <p class="lead__info">Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные IT-решения, облака,
+          программное
           и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр
           IT-услуг.</p>
       </section>
@@ -52,25 +53,151 @@
         </div>
         <img src="<%=require('./assets/images/map.png')%>" class="map__img" alt="Карта">
       </section>
-      <section class="mission">
-        <h2>Миссия Softline</h2>
-        <p>Мы помогаем организациям трансформироваться, работать эффективно и безопасно  в условиях цифровой экономики.
-        </p>
+      <section class="mission main-color">
+        <h2 class="mission__title">Миссия Softline</h2>
+        <p class="mission__text"> Мы помогаем организациям трансформироваться, работать эффективно и безопасно в
+          условиях цифровой экономики.</p>
+        <div class="mission__background mission__background_left"></div>
+        <div class="mission__background mission__background_right"></div>
       </section>
-      <section>
-        directions
+      <section class="directions">
+        <h2 class="directions__title">Направления бизнеса</h2>
+        <ul class="directions__list">
+          <li class="directions__item directions__item_solution">
+            <div class="directions__background">
+              <div class="directions__container">
+                <p class="directions__info">Решения Softline</p>
+                <p class="directions__text">ГК Softline предлагает клиентам собственную линейку оборудования (ПК,
+                  серверы, торговое оборудование и проч.), разработку программных продуктов, облачных решений, решений в
+                  области информационной безопасности.</p>
+              </div>
+            </div>
+          </li>
+          <li class="directions__item directions__item_security">
+            <div class="directions__background">
+              <div class="directions__container">
+                <p class="directions__info">Кибербезопасность</p>
+                <p class="directions__text">Softline обладает всеми необходимыми государственными лицензиями для
+                  организации проектов по информационной безопасности и аттестации. </p>
+              </div>
+            </div>
+          </li>
+          <li class="directions__item directions__item_import">
+            <div class="directions__background">
+              <div class="directions__container">
+                <p class="directions__info">Импортозамещение</p>
+                <p class="directions__text">ГК Softline обладает широчайшим портфелем решений и услуг для
+                  импортозамещения, включая ПО и оборудование собственного производства.</p>
+              </div>
+            </div>
+          </li>
+          <li class="directions__item directions__item_cloud">
+            <div class="directions__background">
+              <div class="directions__container">
+                <p class="directions__info">Облачные решения</p>
+                <p class="directions__text">Softline использует современные облачные решения как российских, так и
+                  международных вендоров для масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="directions__item directions__item_develop">
+            <div class="directions__background">
+              <div class="directions__container directions__container_higth">
+                <p class="directions__info">Цифровая трансформация<br>и разработка ПО</p>
+                <p class="directions__text">Softline использует современные технологи и новые возможности для увеличения
+                  производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые
+                  трансформируют
+                  ПО под нужды конкретного предприятия.</p>
+              </div>
+            </div>
+          </li>
+          <li class="directions__item directions__item_support">
+            <div class="directions__background">
+              <div class="directions__container">
+                <p class="directions__info">Техническая поддержка Softline</p>
+                <p class="directions__text">200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в году,
+                  сервисное
+                  партнерство с 30+ мировыми производителями.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="benefits">
-
+        <div class="benefits__elem">
+          <div class="benefits__container">
+            <h2>Компенсационный пакет</h2>
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_med"></div>
+                <p>ДМС</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_cake"></div>
+                <p>Выходной в&nbsp;день&nbsp;рождения</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_desk"></div>
+                <p>Корпоративная мобильная связь</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_sport"></div>
+                <p>Корпоративные скидки на спорт</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_hand"></div>
+                <p>LTI</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="benefits__elem">
+          <div class="benefits__container">
+            <h3>Программа дополнительной мотивации</h3>
+            <h3 class="active">доплата 12% от суммы</h3>
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_print"></div>
+                <p>Оргтехники</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_med"></div>
+                <p>ДМС</p>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__icon benefits__icon_house"></div>
+                <p>Ипотеки</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="galary">
-
+        <div class="galary__header">
+          <h2>Корпоративная жизнь</h2>
+          <button class="galary__btn galary__btn_left"></button>
+          <button class="galary__btn galary__btn_right"></button>
+        </div>
+        <div class="galary__container">
+          <div class="galary__slider">
+            <img src="<%=require('./assets/images/img1.jpg')%>" class="galary__img" alt="Фото">
+            <img src="<%=require('./assets/images/img2.jpg')%>" class="galary__img" alt="Фото">
+            <img src="<%=require('./assets/images/img4.jpg')%>" class="galary__img" alt="Фото">
+            <img src="<%=require('./assets/images/img5.jpg')%>" class="galary__img" alt="Фото">
+            <img src="<%=require('./assets/images/img6.jpg')%>" class="galary__img" alt="Фото">
+          </div>
+        </div>
+        <ul class="galary__slider-list">
+          <li class="galary__item galary__item_active"></li>
+          <li class="galary__item"></li>
+          <li class="galary__item"></li>
+          <li class="galary__item"></li>
+          <li class="galary__item"></li>
+        </ul>
       </section>
     </main>
-    <footer class="footer"></footer>
   </div>
-
 </body>
-
 </html>

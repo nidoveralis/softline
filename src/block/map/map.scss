@@ -1,5 +1,8 @@
 .map {
   font-weight: 600;
+  gap: 90px;
+  padding-bottom: 26px;
+  margin-bottom: 80px;
 }
 
 .map__header {
@@ -38,15 +41,17 @@
 
 .map__item {
   padding-bottom: 27px;
+  cursor: pointer;
 }
 
 .map__item_active {
   border-bottom: 3px solid;
   margin-top: 2px;
   padding-bottom: 25px;
+  cursor: auto;
 }
 
 .map__img {
-  width: 90%;
-  height: 604px;
+  width: 95%;
+  height: 599px;
 }

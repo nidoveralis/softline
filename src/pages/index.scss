@@ -5,7 +5,11 @@
 @import url('../block/page/page.scss');
 @import url('../block/header/header.scss');
 @import url('../block/lead/lead.scss');
-@import url('../block/map//map.scss');
+@import url('../block/map/map.scss');
+@import url('../block/mission/mission.scss');
+@import url('../block/directions/directions.scss');
+@import url('../block/benefits/benefits.scss');
+@import url('../block/galary/galary.scss');
 
 body {
   color: #444;
@@ -14,9 +18,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p, h1, h2 {
+p,
+h1,
+h2,
+h3 {
   padding: 0;
   margin: 0;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 51px;
+  letter-spacing: -0.012em;
 }
 
 ul {
@@ -45,5 +67,5 @@ section {
 }
 
 .main-color {
-  background-color: vars.$active-color;
+  background-color: vars.$active-background;
 }

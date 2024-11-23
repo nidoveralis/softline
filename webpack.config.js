@@ -30,7 +30,7 @@ module.exports = {
         type: 'asset/resource'
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(scss|css)$/i,
         use: [
           'style-loader',
           'css-loader',
@@ -39,26 +39,17 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/,
-        use: [
-          {
+        // use: [
+        //   {
             loader: 'style-resources-loader',
             options: {
               patterns: [
                 path.resolve(__dirname, 'src/styles/_variables.scss'),
               ],
             },
-          },
-        ],
+        //   },
+        // ],
       },
-      // {
-      //   test: /\.(scss|css)$/,
-      //   use: [
-      //     MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     'sass-loader',
-      //     'style-loader'
-      //   ]
-      // },
     ]
   },
   plugins: [
@@ -66,8 +57,8 @@ module.exports = {
       template: './src/index.html'
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: '[name].css',
+    // }),
   ]
 };
