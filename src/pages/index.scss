@@ -69,3 +69,7 @@ section {
 .main-color {
   background-color: vars.$active-background;
 }
+
+li:hover, a:hover {
+  color: vars.$active-color;
+}
