@@ -82,6 +82,10 @@ function addClassMarksOnCity(index) {
     item.classList.remove('map__mark_visible');
   });
 
+  cities.forEach(item => {
+    item.classList.remove('active');
+  });
+
   if (index === 0) {
     marks[index].classList.add('map__mark_visible');
     addMapItemsActive(1);
@@ -120,7 +124,13 @@ function addClassMarksOnCity(index) {
       marks[id].classList.add('map__mark_visible');
     });
     addMapItemsActive(8);
+  } else {
+    const id = cities[index].id
+    marks[id].classList.add('map__mark_visible');
+    addMapItemsActive(0);
   }
+
+  cities[index].classList.add('active');
 };
 
 function handleClickLeftBtn() {
@@ -177,3 +187,11 @@ cities.forEach((el, index) => {
 leftButton.addEventListener('click', handleClickLeftBtn);
 rightButton.addEventListener('click', handleClickRightBtn);
 mapButton.addEventListener('click', handleClickMapBtn);
+
+document.addEventListener('click', (event) => {
+  if (!offices.contains(event.target) && !mapButton.contains(event.target)) {
+    offices.classList.remove('offices_active');
+    mapButton.classList.remove('map__button_active');
+    mapList.classList.remove('mapList_hidden');
+  }
+});

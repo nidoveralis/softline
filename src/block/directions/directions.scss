@@ -2,18 +2,21 @@
   margin-bottom: 99px;
 }
 
+.directions__title {
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  text-align: center;
+}
+
 .directions__list {
   margin-top: 53px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 22px 19px;
-  margin-right: 8px;
+  gap: 22px 24px;
 }
 
 .directions__item {
-  width: 615px;
-  height: 260px;
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
@@ -100,4 +103,30 @@
 
 .directions__item:hover .directions__container_higth {
   padding-top: 26px;
+}
+
+@media screen and (min-width: 426px) {
+  .directions__title {
+    font-size: 56px;
+  }
+
+  .directions__item {
+    height: 260px;
+    width: 615px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .directions__title {
+    font-size: 28px;
+  }
+
+  .directions__item {
+    height: 60px;
+    width: 90vw;
+  }
+
+  .directions__background {
+    height: 100%;
+  }
 }

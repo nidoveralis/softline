@@ -1,6 +1,12 @@
 .galary {
-  width: 88.8%;
+  width: 87.8%;
   margin: 0 auto;
+}
+
+.galary__title {
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  text-align: center;
 }
 
 .galary__header {
@@ -11,47 +17,10 @@
   width: 100%;
 }
 
-.galary__btn {
-  border: none;
-  position: absolute;
-  top: 3px;
-  right: 0;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-bottom: 1px solid #f0f0f0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../../assets/icons/arrow-red.svg');
-  cursor: pointer;
-}
-
-.galary__btn_left {
-  right: 76px;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-}
-
-.galary__btn_right {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-}
-
 .galary__container {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
-  width: 100%;
   height: 44vw;
 }
 
@@ -69,16 +38,6 @@
   -o-transition: left 0.7s ease, right 0.7s ease;
 }
 
-.galary__slider-list {
-  width: 100%;
-  height: 38px;
-  margin-top: auto;
-  margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .galary__item {
   width: 214px;
   height: 6px;
@@ -92,4 +51,84 @@
 
 .galary__item_active {
   background-color: #A30C33;
+}
+
+@media screen and (min-width: 426px) {
+  .galary__title {
+    font-size: 56px;
+  }
+
+  .galary__slider {
+    width: 100%;
+  }
+
+  .galary__btn {
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-bottom: 1px solid #f0f0f0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../assets/icons/arrow-red.svg');
+    cursor: pointer;
+  }
+  
+  .galary__btn_left {
+    right: 76px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  
+  .galary__btn_right {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+
+  .galary__container {
+    width: 100%;
+  }
+
+  .galary__slider-list {
+    width: 100%;
+    height: 38px;
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .galary__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .galary__slider {
+    width: 90vw;
+  }
+
+  .galary__container {
+    width: 90vw;
+  }
+
+  .galary__slider-list,
+  .galary__btn {
+    display: none;
+  }
 }

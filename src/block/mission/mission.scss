@@ -1,5 +1,4 @@
 .mission {
-  height: 470px;
   justify-content: center;
   color: #fff;
   gap: 30px;
@@ -10,12 +9,13 @@
 
 .mission__title {
   margin-bottom: 6px;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  text-align: center;
 }
 
 .mission__text {
-  font-size: 32px;
   font-weight: 400;
-  line-height: 48px;
   text-align: center;
   display: inline-block;
   width: 87%;
@@ -40,4 +40,35 @@
 .mission__background_right {
   right: -4px;
   transform: scale(-1, -1);
+}
+
+
+@media screen and (min-width: 426px) {
+  .mission {
+    height: 470px;
+  }
+
+  .mission__title {
+    font-size: 56px;
+  }
+
+  .mission__text {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mission {
+    height: 58.1vw;
+    width: 91vw;
+  }
+  .mission__title {
+    font-size: 28px;
+  }
+
+  .mission__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

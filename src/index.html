@@ -12,17 +12,17 @@
     <header class="header">
       <div class="header__logo"></div>
       <nav class="header__menu">
-        <ul>
-          <li>
+        <ul class="header__list">
+          <li class="header__item">
             <a href="https://softline.ru/" target="_blank">Облачные решения</a>
           </li>
-          <li>
+          <li class="header__item">
             <a href="https://softline.ru/" target="_blank">Кибербезопасность</a>
           </li>
-          <li>
+          <li class="header__item">
             <a href="https://softline.ru/" target="_blank">Импортозамещение</a>
           </li>
-          <li>
+          <li class="header__item">
             <a href="https://softline.ru/" target="_blank">Цифровая трансформация</a>
           </li>
         </ul>
@@ -35,6 +35,28 @@
           программное
           и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также широкий спектр
           IT-услуг.</p>
+        <div class="lead__content">
+          <div class="content">
+            <h4 class="content__header">> 30 лет</h4>
+            <p class="content__text">на IT-рынке </p>
+          </div>
+          <div class="content">
+            <h4 class="content__header">4600</h4>
+            <p class="content__text">сотрудников в России</p>
+          </div>
+          <div class="content">
+            <h4 class="content__header">25</h4>
+            <p class="content__text">городов России</p>
+          </div>
+          <div class="content">
+            <h4 class="content__header">2000 +</h4>
+            <p class="content__text">разработчиков</p>
+          </div>
+          <div class="content">
+            <h4 class="content__header">3000 +</h4>
+            <p class="content__text">сотрудников ежегодно проходят оценку и обучение </p>
+          </div>
+        </div>
       </section>
       <section class="map">
         <div class="map__header">
@@ -57,54 +79,54 @@
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Центр</li>
-            <li class="offices__item">Воронеж</li>
-            <li class="offices__item">Ярославль</li>
-            <li class="offices__item">Белгород</li>
+            <li class="offices__item" id="2">Воронеж</li>
+            <li class="offices__item" id="1">Ярославль</li>
+            <li class="offices__item" id="3">Белгород</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Северо-Запад</li>
-            <li class="offices__item">Санкт-Петербург</li>
-            <li class="offices__item">Калининград</li>
+            <li class="offices__item" id="4">Санкт-Петербург</li>
+            <li class="offices__item" id="5">Калининград</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Юг</li>
-            <li class="offices__item">Ростов-на-Дону</li>
-            <li class="offices__item">Краснодар</li>
-            <li class="offices__item">Волгоград</li>
+            <li class="offices__item" id="6">Ростов-на-Дону</li>
+            <li class="offices__item" id="8">Краснодар</li>
+            <li class="offices__item" id="7">Волгоград</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Волга</li>
-            <li class="offices__item">Казань</li>
-            <li class="offices__item">Самара</li>
-            <li class="offices__item">Уфа</li>
-            <li class="offices__item">Оренбург</li>
-            <li class="offices__item">Нижний Новгород</li>
+            <li class="offices__item" id="11">Казань</li>
+            <li class="offices__item" id="10">Самара</li>
+            <li class="offices__item" id="12">Уфа</li>
+            <li class="offices__item" id="13">Оренбург</li>
+            <li class="offices__item" id="9">Нижний Новгород</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Урал</li>
-            <li class="offices__item">Екатеринбург</li>
-            <li class="offices__item">Челябинск</li>
-            <li class="offices__item">Пермь</li>
-            <li class="offices__item">Сургут</li>
-            <li class="offices__item">Тюмень</li>
-            <li class="offices__item">Ижевск</li>
+            <li class="offices__item" id="17">Екатеринбург</li>
+            <li class="offices__item" id="18">Челябинск</li>
+            <li class="offices__item" id="15">Пермь</li>
+            <li class="offices__item" id="16">Сургут</li>
+            <li class="offices__item" id="19">Тюмень</li>
+            <li class="offices__item" id="14">Ижевск</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Сибирь</li>
-            <li class="offices__item">Новосибирск</li>
-            <li class="offices__item">Омск</li>
-            <li class="offices__item">Томск</li>
-            <li class="offices__item">Красноярск</li>
-            <li class="offices__item">Иркутск</li>
+            <li class="offices__item" id="21">Новосибирск</li>
+            <li class="offices__item" id="20">Омск</li>
+            <li class="offices__item" id="22">Томск</li>
+            <li class="offices__item" id="23">Красноярск</li>
+            <li class="offices__item" id="24">Иркутск</li>
           </ul>
           <ul class="offices__list">
             <li class="offices__item">Дальний Восток</li>
-            <li class="offices__item">Хабаровск</li>
-            <li class="offices__item">Владивосток</li>
+            <li class="offices__item" id="25">Хабаровск</li>
+            <li class="offices__item" id="26">Владивосток</li>
           </ul>
         </div>
         <div class="map__container">
-          <img src="<%=require('./assets/images/map.png')%>" class="map__img" alt="Карта">
+          <div class="map__img"></div>
           <div class="map__mark map__mark_0 map__mark_visible">
             <span class="map__dot"></span>
             <span>Москва</span>
@@ -290,7 +312,7 @@
       <section class="benefits">
         <div class="benefits__elem">
           <div class="benefits__container">
-            <h2>Компенсационный пакет</h2>
+            <h2 class="benefits__title">Компенсационный пакет</h2>
             <ul class="benefits__list">
               <li class="benefits__item">
                 <div class="benefits__icon benefits__icon_med"></div>
@@ -317,8 +339,8 @@
         </div>
         <div class="benefits__elem">
           <div class="benefits__container">
-            <h3>Программа дополнительной мотивации</h3>
-            <h3 class="active">доплата 12% от суммы</h3>
+            <h3 class="benefits__subtitle">Программа дополнительной мотивации</h3>
+            <h3 class="benefits__subtitle active">доплата 12% от суммы</h3>
             <ul class="benefits__list">
               <li class="benefits__item">
                 <div class="benefits__icon benefits__icon_print"></div>
@@ -339,7 +361,7 @@
 
       <section class="galary">
         <div class="galary__header">
-          <h2>Корпоративная жизнь</h2>
+          <h2 class="galary__title">Корпоративная жизнь</h2>
           <button class="galary__btn galary__btn_left"></button>
           <button class="galary__btn galary__btn_right"></button>
         </div>
@@ -363,4 +385,5 @@
     </main>
   </div>
 </body>
+
 </html>
